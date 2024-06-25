@@ -6,23 +6,19 @@ Este repositório é dedicado ao estudo e implementação de estratégias de aut
 
 O objetivo deste repositório é oferecer uma visão abrangente sobre métodos modernos de autenticação, com exemplos práticos que podem ser utilizados como referência para desenvolvedores que desejam implementar sistemas de autenticação seguros e eficazes.
 
-### Projetos Inclusos
+### Projeto Incluso
 
 1. **JWT Authentication Project**
    - Uma implementação básica de autenticação usando JWT. Este projeto abrange a criação, validação e renovação de tokens JWT.
 
-2. **OAuth Implementation Project** (Em breve)
-   - Um exemplo prático de implementação de OAuth, detalhando o fluxo de autorização e como proteger recursos usando tokens OAuth.
-
 ## Tecnologias Utilizadas
 
-- ASP.NET Core
-- IdentityServer4
-- Outras tecnologias relevantes...
+- .NET 8
 
-## Como Usar
+## Funcionalidades
 
-Para cada projeto incluído neste repositório, você encontrará uma pasta dedicada contendo o código-fonte completo e instruções detalhadas no README específico do projeto.
-
+- **Geração de Token**: Implementação de endpoints que geram um JWT para os usuários após uma autenticação bem-sucedida.
+- **Validação de Token**: Middleware que verifica a validade do JWT em cada solicitação protegida.
+- **Refresh Tokens**: Experimentos com a implementação de refresh tokens para manter os usuários autenticados sem necessidade de reautenticação frequente.
 
 
