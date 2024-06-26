@@ -1,0 +1,26 @@
+@host = http://localhost:5037
+@username = Guilherme
+@password = teste
+
+### Login
+POST {{host}}/api/users/login
+Content-Type: application/json
+
+{
+  "Username": "{{username}}",
+  "Password": "{{password}}"
+}
+
+### Create User
+POST {{host}}/api/users/register
+Content-Type: application/json
+
+{
+  "Username": "{{username}}",
+  "Password": "{{password}}"
+}
+
+### Get Users
+GET {{host}}/api/users
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiR3VpbGhlcm1lIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiJmZTlmOWQxNC1kYzNmLTRkNDMtODE0Yy1lN2I2MGZjYmI0OTQiLCJleHAiOjE3MTkzODEwMjksImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjUwMDEiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo1MDAxIn0.G98ann9n7cOxGB2JLTyzhfP8pBRh1VIrHza9fnDArbo
+
