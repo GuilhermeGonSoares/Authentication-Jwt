@@ -1,6 +1,6 @@
 namespace Authentication_jwt.Entities;
 
-internal sealed class User(string username, string password, ICollection<Roles>? roles)
+public sealed class User(string username, string password, ICollection<Roles>? roles)
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public string Username { get; set; } = username;

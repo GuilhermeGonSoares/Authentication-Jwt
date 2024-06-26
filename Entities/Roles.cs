@@ -1,6 +1,6 @@
 namespace Authentication_jwt.Entities;
 
-internal enum Roles
+public enum Roles
 {
     Admin,
     User
